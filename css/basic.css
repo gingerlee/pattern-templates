@@ -2,7 +2,7 @@
 /* For testing only */
 
 *:not(body):not(html) {
-  border:1px dotted #aaa;
+  border:1px dotted #777;
 }
 
 .columns {
@@ -19,70 +19,44 @@ body, html {
   padding: 0;
 }
 
-.main {
+.header {
   background: #ddd;
 }
 
-.secondary {
+.gallery {
+  overflow: auto;
+}
+
+.gallery-item {
   background: #aaa;
 }
 
-.about {
-  background: #888;
-}
+
 @media screen and (min-width: 801px){
-  .main{
-    float: left;
-    height: 100vh;
-    width: 62vw;
-  }
 
-  .secondary{
-    float: right;
-    height: 49.5vh;
-    width: 37vw;
-    margin-bottom: 1vh;
-  }
-
-  .about{
-    float: right;
-    height: 49.5vh;
-    width: 37vw;
-  }
 }
 @media screen and (max-width: 800px){
-  .main {
-    height: 49.5vh;
-  }
-  .secondary {
-    height: 49.5vh;
-    margin-top: 1vh;
+  .gallery-item {
+    width: 46vw;
     float: left;
-    width: 49.5vw;
-    margin-right: 1vw;
+    height: 24vh;
+    display: inline-block;
+    margin: 2vh 0 2vh 2.6vw;
   }
-  .about {
-    height: 49.5vh;
-    margin-top: 1vh;
-    float: right;
-    width: 49.5vw;
+  .gallery {
+    padding: 0;
+    padding-top: 2vh;
   }
 }
 @media screen and (max-width: 420px){
-  .main {
-    height: 50vh;
-  }
-  .secondary {
-    height: 24vh;
-    margin-top: 1vh;
-    width: 100vw;
-    float: none;
-
-  }
-  .about {
-    height: 24vh;
-    margin-top: 1vh;
-    width: 100vw;
-    float: none;
-  }
+ .gallery-item {
+   height: 24vh;
+   margin: 4vh 0;
+   float: none;
+   width: auto;
+   display: block;
+ }
+ .gallery {
+   padding: 0 3%;
+ }
 }

@@ -31,10 +31,24 @@ body, html {
   background: #aaa;
 }
 
-
 @media screen and (min-width: 801px){
+  .header {
+    height: 15vh;
+  }
 
+  .gallery-item {
+    width: 30vw;
+    float: left;
+    height: 29vh;
+    display: inline-block;
+    margin: 3vh 0 3vh 2.5vw;
+  }
+  .gallery {
+    padding: 0;
+    padding-top: 2vh;
+  }
 }
+
 @media screen and (max-width: 800px){
   .gallery-item {
     width: 46vw;
@@ -48,6 +62,7 @@ body, html {
     padding-top: 2vh;
   }
 }
+
 @media screen and (max-width: 420px){
  .gallery-item {
    height: 24vh;

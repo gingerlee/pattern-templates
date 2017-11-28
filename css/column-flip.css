@@ -1,28 +1,55 @@
-
 /* For testing only */
-
 *:not(body):not(html) {
-  box-sizing:border-box;
   border:1px dotted #444;
 }
-
 .columns {
   min-height: 100px;
 }
-
 /* End for testing */
 
+*{
+  box-sizing: border-box;
+}
+body, html, div {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
 
+.logo-round {
+  height: 4vh;
+  width: 4vh;
+  border-radius: 50%;
+  background: #000;
+  margin: 1vh;
+  float: left;
+}
+.logo-rect {
+  height: 2vh;
+  width: 9vw;
+  background: #000;
+  margin: 1.5vh;
+  float: left;
+}
+
+.nav {
+  clear: left;
+  width: 100vw;
+}
+
+.nav-item {
+  height: 3vh;
+  width: 24vw;
+  background: #000;
+  margin: 0.1vh;
+  float: left;
+}
 
 /*MEDIA QUERIES*/
-@media screen and (min-width: 801px){
+@media screen and (min-width: 800px){
 
 }
 
-@media screen and (max-width: 800px){
-
-}
-
-@media screen and (max-width: 420px){
+@media screen and (min-width: 420px){
 
 }

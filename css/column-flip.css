@@ -3,7 +3,7 @@
 
 *:not(body):not(html) {
   box-sizing:border-box;
-  border:1px dashed #000;
+  border:1px dotted #444;
 }
 
 .columns {
@@ -11,3 +11,18 @@
 }
 
 /* End for testing */
+
+
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 801px){
+
+}
+
+@media screen and (max-width: 800px){
+
+}
+
+@media screen and (max-width: 420px){
+
+}

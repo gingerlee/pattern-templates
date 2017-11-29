@@ -1,10 +1,10 @@
 /* For testing only */
-*:not(body):not(html) {
+/**:not(body):not(html) {
   border:1px dotted #444;
 }
 .columns {
   min-height: 100px;
-}
+}*/
 /* End for testing */
 
 *{
@@ -43,6 +43,45 @@ body, html, div {
   background: #000;
   margin: 0.1vh;
   float: left;
+}
+
+.featured-image {
+  width: 55vw;
+  height: 55vw;
+  border-radius: 50%;
+  margin: 0 auto 0;
+  background: #000;
+}
+
+.image-square {
+  height: 15vh;
+  background: #000;
+  margin: 2vh 0;
+}
+
+
+div.featured-copy p {
+    margin: 1vw;
+}
+
+div.featured-copy h2 {
+    margin: 1.5vh 0.5vw;
+}
+
+.sidebar-image {
+  height: 4vh;
+  width: 4vh;
+  background: #000;
+  margin: 0 1vw;
+  float: left;
+}
+
+div.sidebar-copy h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.sidebar-copy p {
+  margin-top: 0.5vh;
 }
 
 /*MEDIA QUERIES*/
